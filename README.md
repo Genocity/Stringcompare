@@ -1,3 +1,3 @@
 # Stringcompare
 
-[link](https://stringcompare.000webhostapp.com/
+[link](https://stringcompare.000webhostapp.com/)
