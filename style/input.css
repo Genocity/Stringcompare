@@ -40,7 +40,7 @@ input:focus ~ .bar:after
 .bar:after
 {
     position: absolute;
-    z-index: 10;
+    z-index: 5;
 
     width: 0;
     height: 3.5px;
