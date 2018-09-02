@@ -1,3 +1,7 @@
+:root {
+    --modal-wrapper-opacity: rgba(0, 0, 0, .35);
+}
+
 body,
 html
 {
