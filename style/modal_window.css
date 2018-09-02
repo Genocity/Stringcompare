@@ -1,7 +1,7 @@
 .modal-wrapper
 {
     position: absolute;
-    z-index: 10;
+    z-index: 15;
     top: 0;
     left: 0;
 
@@ -22,7 +22,7 @@ h2
 
     text-align: center;
 
-    color: white;
+    color: var(--modal-header-text-color);
 }
 
 .modal-content
@@ -32,7 +32,7 @@ h2
     margin-top: 10vh;
 
     border-radius: 5px;
-    background: #006474;
+    background: var(--modal-bg-color);
 }
 
 .item1,
@@ -68,9 +68,9 @@ h2
 
     transition: .3s;
 
-    color: grey;
+    color: var(--modal-button-text-color);
     border-radius: 5px;
-    background: white;
+    background: var(--modal-button-color);
 
     justify-content: center;
     align-items: center;
@@ -78,8 +78,8 @@ h2
 
 .button-ok:hover
 {
-    color: white;
-    background: #0b5663;
+    color: var(--modal-button-hover-text-color);
+    background: var(--modal-button-hover-color);
 }
 
 
