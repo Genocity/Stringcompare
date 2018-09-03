@@ -18,13 +18,18 @@ function main() {
 		header = doc.getElementsByTagName('h2')[0];
 
 
+
 	if ((input_one_val == "") || (input_two_val == "")) { //if inputs are empty
 		header.innerText = "Enter the value!";
+		buttonOk.style.color = header.style.color = "var(--modal-button-text-color-r)";
 	} else {
 		if (input_one_val == input_two_val) { //compare the values
 			header.innerText = "These Strings are the same";
+			buttonOk.style.color = header.style.color = "var(--modal-button-text-color-g)";
+
 		} else {
 			header.innerText = "These Strings are different";
+			buttonOk.style.color = header.style.color = "var(--modal-button-text-color-b)";
 		}
 	}
 

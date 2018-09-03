@@ -1,26 +1,27 @@
 :root {
-    --modal-wrapper-opacity: rgba(105,171,159,.25); /*rgba(105,171,159,.3)*/
+    --modal-wrapper-opacity: rgba(105,171,159,.1);
 
-    
+    --bg-color: #bde4a8; 
 
-    --bg-color: #bde4a8; /*done*/
+    --header-text-color: #59994d; 
 
-    --header-text-color: #59994d; /*done*/
+    --input-text-color: #676f54; 
+    --input-selection-color: #9cc69b; 
+    --input-bar-color: #82BB78; 
 
-    --input-text-color: #676f54; /*done*/
-    --input-selection-color: #9cc69b; /*done*/
-    --input-bar-color: #82BB78; /*done*/
+    --proceed-color: var(--header-text-color); 
+    --proceed-hover-color: #3b6633; 
+    --proceed-text-color: #f0f7ee; 
 
-    --proceed-color: #59994d; /*done*/
-    --proceed-hover-color: #3b6633; /*done*/
-    --proceed-text-color: #f0f7ee; /*done*/
-
-    --modal-bg-color: #79b4a9; /*done*/
-    --modal-header-text-color: #eaf3f2; /*done*/
-    --modal-button-color: #eaf3f2; /*done*/
-    --modal-button-hover-color: #519084; /*done*/
-    --modal-button-text-color: #519084; /*done*/
-    --modal-button-hover-text-color: #EAF3F2; /*done*/
+    --modal-bg-color: #79b4a9; 
+    --modal-header-text-color: #eaf3f2; 
+    --modal-button-color: var(--modal-header-text-color); 
+    --modal-button-text-color-r: #c4092a;
+    --modal-button-text-color-g: #0b6e4f;
+    --modal-button-text-color-b: #0f4c5c;
+    --modal-button-hover-color: #519084; 
+    --modal-button-text-color: var(--modal-button-hover-color); 
+    --modal-button-hover-text-color: var(--modal-header-text-color); 
 }
 
 body,
@@ -44,8 +45,9 @@ html
 }
 
 ::-moz-selection
+
 {
-    background: #a6c100;
+    background: var(--input-selection-color);
 }
 
 ::selection
