@@ -6,7 +6,7 @@ input
 
     text-align: center;
 
-    color: #647400;
+    color: var(--input-text-color);
     border: none;
     outline: none;
     background: none;
@@ -40,7 +40,7 @@ input:focus ~ .bar:after
 .bar:after
 {
     position: absolute;
-    z-index: 10;
+    z-index: 5;
 
     width: 0;
     height: 3.5px;
@@ -48,7 +48,7 @@ input:focus ~ .bar:after
     content: '';
     transition: cubic-bezier(.645, .045, .355, 1) .6s;
 
-    background: #647400;
+    background: var(--input-bar-color);
 }
 
 .bar:before

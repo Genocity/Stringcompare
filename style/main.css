@@ -1,3 +1,29 @@
+:root {
+    --modal-wrapper-opacity: rgba(105,171,159,.1);
+
+    --bg-color: #bde4a8; 
+
+    --header-text-color: #59994d; 
+
+    --input-text-color: #676f54; 
+    --input-selection-color: #9cc69b; 
+    --input-bar-color: #82BB78; 
+
+    --proceed-color: var(--header-text-color); 
+    --proceed-hover-color: #3b6633; 
+    --proceed-text-color: #f0f7ee; 
+
+    --modal-bg-color: #79b4a9; 
+    --modal-header-text-color: #eaf3f2; 
+    --modal-button-color: var(--modal-header-text-color); 
+    --modal-button-text-color-r: #c4092a;
+    --modal-button-text-color-g: #0b6e4f;
+    --modal-button-text-color-b: #0f4c5c;
+    --modal-button-hover-color: #519084; 
+    --modal-button-text-color: var(--modal-button-hover-color); 
+    --modal-button-hover-text-color: var(--modal-header-text-color); 
+}
+
 body,
 html
 {
@@ -15,17 +41,18 @@ html
         -ms-user-select: none;
             user-select: none;
 
-    background: #c8e7df;
+    background: var(--bg-color);
 }
 
 ::-moz-selection
+
 {
-    background: #a6c100;
+    background: var(--input-selection-color);
 }
 
 ::selection
 {
-    background: #a6c100;
+    background: var(--input-selection-color);
 }
 
 .wrapper
@@ -37,7 +64,7 @@ h1
 {
     font-size: 60px;
 
-    color: #006474;
+    color: var(--header-text-color);
 }
 
 .head,
